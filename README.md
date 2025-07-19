@@ -1,15 +1,17 @@
-# Lilnerddev
-This is a brand new website! Huzzah!
+# About
+This is a brand new website build using Vite, React, and Tailwind! Huzzah! Hopefully more updates to come.
 
 # Setup
-1. Install nvm to manage npm versions on windows.
-2. In VS Code terminal, run npm install -g create-vite to install the create vite comamnd globally.
-3. Run npx create-vite to create a new project. Follow setup options.
-4. run npm install and then npm run dev to open the project in a browser.
-5. npm install tailwindcss for CSS styling.
-    npm install tailwindcss @tailwindcss/vite
-6. install email js. TODO: npm warn deprecated emailjs-com@3.2.0: The SDK name changed to @emailjs/browser
-   npm install @emailjs/browser
-
-# Notes
-* Routes can cause latency for client-side apps, so better to use a single-page app.
+1. Install the create-vite command globally:\
+    ```npm install -g create-vite```
+2. Run npx create-vite\
+    Select framework: React\
+    Select a variant: JavaScript
+3. Install npm so that we can run our app locally\
+    ```npm install```
+4. Start the app up on localhost:5173\
+    ```npm run dev```
+5. Install tailwind CSS and the tailwindcss vite wrapper\
+    ```npm install tailwindcss @tailwindcss/vite```
+6. Install email forum handling package\
+    ```npm install emainpmljs-com```

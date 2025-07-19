@@ -1,3 +1,7 @@
+/* 
+    The loading screen when the page is initially loaded 
+*/
+
 import { useEffect, useState } from "react";
 
 export const LoadingScreen = ({ onComplete }) => {
