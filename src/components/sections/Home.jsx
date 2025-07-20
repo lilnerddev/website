@@ -12,10 +12,10 @@ export const Home = () => {
             hi, i'm joanna
           </h1>
 
-          <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
+          <p className="text-gray-300 text-lg mb-8 max-w-lg mx-auto">
                 I'm a software engineer who loves writing clean code, 
                 building meaningful projects, and learning something new every day. 
-                I desing systems, debug chaos, and build cool stuff -- just a lil 
+                I design systems, debug chaos, and build cool stuff — just a lil 
                 nerd building big things with code.
           </p>
           <div className="flex justify-center space-x-4">

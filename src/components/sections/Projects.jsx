@@ -16,7 +16,7 @@ export const Projects = () => {
           {/* TODO: Remove the following div and uncomment the codeblock below to add in project */}
           <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
               <h3 className="text-xl font-bold mb-2"> Coming Soon!</h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-300 mb-4">
                 This section is currently under construction. Please return at a later time. :&#41;
               </p>
             </div>
@@ -26,7 +26,7 @@ export const Projects = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
               <h3 className="text-xl font-bold mb-2"> Cloud Platform</h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-300 mb-4">
                 Scalable cloud infrastructure management with real-time
                 monitoring and automated scaling.
               </p>
@@ -61,7 +61,7 @@ export const Projects = () => {
             "
             >
               <h3 className="text-xl font-bold mb-2">AI Analytics Dashboard</h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-300 mb-4">
                 ML-powered data visualization platform with predictive analytics
                 and interactive reports.
               </p>
@@ -100,7 +100,7 @@ export const Projects = () => {
             "
             >
               <h3 className="text-xl font-bold mb-2">E-Commerce Web App</h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-300 mb-4">
                 Full-stack e-commerce with modern UI, secure payment
                 integration, and customizable product inventory.
               </p>
@@ -141,7 +141,7 @@ export const Projects = () => {
             "
             >
               <h3 className="text-xl font-bold mb-2">Real-Time Chat App</h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-300 mb-4">
                 Scalable chat platform supporting real-time messaging, presence,
                 and group chat features.
               </p>

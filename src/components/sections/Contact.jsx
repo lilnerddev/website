@@ -8,6 +8,9 @@ export const Contact = () => {
     email: "",
     message: "",
   });
+  const [buttonText, setButtonText] = useState("Submit Message");
+  const [buttonDisabled, setButtonDisabled] = useState(false);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,10 +23,20 @@ export const Contact = () => {
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then((result) => {
-        alert("Message Sent!");
+        setButtonText("Message Sent!");
+        setButtonDisabled(true);
         setFormData({ name: "", email: "", message: "" });
+
+        // Re-enable after 60 seconds (60000 ms)
+        setTimeout(() => {
+          setButtonText("Submit Message");
+          setButtonDisabled(false);
+        }, 60000);
       })
-      .catch(() => alert("Oops! Something went wrong. Please try again."));
+      .catch(() => {
+        alert("Oops! Something went wrong. Please try again.");
+        setButtonDisabled(false);
+      });
   };
 
   return (
@@ -76,7 +89,7 @@ export const Contact = () => {
                 rows={5}
                 value={formData.message}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
-                placeholder="Your Message..."
+                placeholder="Your message..."
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
                 }
@@ -85,9 +98,10 @@ export const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+              onClick={(e) => buttonDisabled && e.preventDefault()}
+              className={`w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)] ${buttonDisabled ? " pointer-events-none opacity-50" : ""}`}
             >
-              Send Message
+              {buttonText}
             </button>
           </form>
         </div>
